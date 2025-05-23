@@ -70,19 +70,19 @@ public:
     virtual void output() const
     {
         // Верхня лінія розділення
-        cout << string(79, '-') << endl; 
+        cout << string(79, '-') << endl;
 
         cout << "| " << "ID  " << setw(2)
             << "| " << "Тип оцінювання " << setw(2)
             << "| " << "Предмет    " << setw(2)
-            << "| " << "Форма здачі   " << setw(2) 
-            << "| " << "Оцінка " << setw(2) 
+            << "| " << "Форма здачі   " << setw(2)
+            << "| " << "Оцінка " << setw(2)
             << "| " << "Форма навчання" << " |" << endl;
 
         // Нижня лінія розділення
         cout << "|" << string(5, '-') << "|" << string(16, '-') << "|" << string(12, '-')
             << "|" << string(15, '-') << "|" << string(8, '-') << "|" << string(16, '-') << "|"
-            << endl;                 
+            << endl;
 
         for (size_t i = 0; i < records.size(); ++i)
         {
@@ -127,18 +127,18 @@ public:
     // ** Похідний клас, функція сортування за оцінкою (спадання) **
     void sortByGrade()
     {
-        sort(records.begin(), records.end(), [](const Record& a, const Record& b) 
+        sort(records.begin(), records.end(), [](const Record& a, const Record& b)
             {
-            return a.grade > b.grade;
+                return a.grade > b.grade;
             });
     }
 
     // ** Похідний клас, функція сортування за формою здачі ** 
     void sortByForm()
     {
-        sort(records.begin(), records.end(), [](const Record& a, const Record& b) 
+        sort(records.begin(), records.end(), [](const Record& a, const Record& b)
             {
-            return a.form < b.form;
+                return a.form < b.form;
             });
     }
 
