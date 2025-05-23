@@ -11,7 +11,7 @@ public:
 	Person() {}
 
 	// Рисунок 5 - створення конструктору класу
-	Person(std::string _Name, std::string _Surname) 
+	Person(std::string _Name, std::string _Surname)
 	{
 		Name = _Name;
 		Surname = _Surname;
@@ -24,7 +24,7 @@ public:
 	}
 };
 
-class Student: public Person // Рисунок 3 - успадкування в програмному коді
+class Student : public Person // Рисунок 3 - успадкування в програмному коді
 {
 public:
 	std::string Group;
